@@ -1,3 +1,4 @@
+import airplane from '@/app/assets/airplane.gif';
 import GithubLogo from '@/app/assets/icons/github-logo.svg';
 import LinkedInLogo from '@/app/assets/icons/linked-in-logo.svg';
 import Pen from '@/app/assets/icons/pen.svg';
@@ -11,6 +12,7 @@ import { EmojiOnHover } from '@/app/components/EmojiOnHover';
 import { Highlight } from '@/app/components/Highlight';
 import { ProjectCard } from '@/app/components/ProjectCard';
 import { Section } from '@/app/components/Section';
+import Image from 'next/image';
 
 const year = new Date().getFullYear();
 
@@ -365,6 +367,7 @@ const Home = () => {
             date="2020.10.09."
           />
         </Section>
+        <Image width={400} src={airplane} alt="airplane" />
         <footer className="flex flex-col gap-2 text-xs text-gray-600">
           <p>감사합니다. 🙇‍♂️🙇‍♂️🙇‍♂️</p>
           <p>© {year} Yongjun Park. (Last Updated : 2024.01.12.)</p>
