@@ -322,7 +322,7 @@ const Home = () => {
             subDescriptions={[
               {
                 emoji: '🐯',
-                text: '학점 : 3.89 / 4.5',
+                text: '학점 : 4.01 / 4.5',
               },
               {
                 emoji: '✌️',
