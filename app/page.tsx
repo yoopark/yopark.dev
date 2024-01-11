@@ -202,7 +202,7 @@ const Home = () => {
           </div>
           <div className="mt-4">
             <p className="float-right text-gray-600">
-              <a href="">
+              <a href="/clair-de-lune.pdf">
                 <Highlight>📎 이력서 파일 다운로드</Highlight>
               </a>
             </p>
