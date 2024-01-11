@@ -1,3 +1,4 @@
+import FigmaLogo from '@/app/assets/icons/figma-logo.svg';
 import GithubLogo from '@/app/assets/icons/github-logo.svg';
 import { Highlight } from '@/app/components/Highlight';
 import { Label } from '@/app/components/Label';
@@ -13,6 +14,7 @@ type ProjectCardProps = {
   thumbnail?: StaticImageData;
   teamCount: number;
   githubUrl?: string;
+  figmaUrl?: string;
   role: string;
   descriptions: string[];
   subDescriptions?: SubDescription[];
@@ -27,6 +29,7 @@ export const ProjectCard = ({
   thumbnail,
   teamCount,
   githubUrl,
+  figmaUrl,
   role,
   descriptions,
   subDescriptions,
@@ -48,6 +51,11 @@ export const ProjectCard = ({
             {githubUrl !== undefined && (
               <a href={githubUrl} target="_blank" rel="noreferrer noopener">
                 <GithubLogo className="w-4 h-4 text-gray-600 transition hover:text-[#171515]" />
+              </a>
+            )}
+            {figmaUrl !== undefined && (
+              <a href={figmaUrl} target="_blank" rel="noreferrer noopener">
+                <FigmaLogo className="w-4 h-4 text-gray-600 transition hover:text-[#ff7262]" />
               </a>
             )}
           </div>

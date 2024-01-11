@@ -215,6 +215,7 @@ const Home = () => {
             thumbnail={stat_thumbnail}
             teamCount={5}
             githubUrl="https://github.com/42Statistics/42Stat-Frontend"
+            figmaUrl="https://www.figma.com/community/file/1327387579103766914/42stat"
             role="프론트엔드 개발"
             descriptions={[
               '42 API를 가공하여 42서울 교육생의 통계를 보여주는 반응형 대시보드 웹서비스',
@@ -284,6 +285,7 @@ const Home = () => {
             thumbnail={last_pong_thumbnail}
             teamCount={4}
             githubUrl="https://github.com/lev-Zero/lastpong"
+            figmaUrl="https://www.figma.com/community/file/1199421293253949642/lastpong"
             role="프론트엔드 개발"
             descriptions={[
               '채팅, 초대, 관전이 가능한 실시간 탁구 게임 웹서비스',
@@ -310,6 +312,7 @@ const Home = () => {
             thumbnail={miliroutine_thumbnail}
             teamCount={5}
             githubUrl="https://github.com/osamhack2022-v2/WEB_AI_MILIROUTINE_MILIROUTINE"
+            figmaUrl="https://www.figma.com/community/file/1170373715075438188/miliroutine"
             role="팀장"
             descriptions={['군인의 특성을 고려한 루틴 참여 및 추천 웹서비스']}
             subDescriptions={[
