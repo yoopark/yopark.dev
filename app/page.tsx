@@ -5,6 +5,7 @@ import stat_thumbnail from '@/app/assets/screenshots/42-stat-thumbnail.png';
 import cerebri_class_thumbnail from '@/app/assets/screenshots/cerebri-class-thumbnail.png';
 import last_pong_thumbnail from '@/app/assets/screenshots/last-pong-thumbnail.png';
 import miliroutine_thumbnail from '@/app/assets/screenshots/miliroutine-thumbnail.png';
+import { CertificateCard } from '@/app/components/CertificationCard';
 import { EducationCard } from '@/app/components/EducationCard';
 import { EmojiOnHover } from '@/app/components/EmojiOnHover';
 import { Highlight } from '@/app/components/Highlight';
@@ -127,151 +128,159 @@ const Home = () => {
           </div>
         </Section>
         <Section title="Project" id="project">
-          <div className="flex flex-col gap-12">
-            <ProjectCard
-              title="42Stat"
-              thumbnail={stat_thumbnail}
-              teamCount={5}
-              githubUrl="https://github.com/42Statistics/42Stat-Frontend"
-              role="프론트엔드 개발"
-              descriptions={[
-                '42 API를 가공하여 42서울 교육생의 통계를 보여주는 반응형 대시보드 웹서비스',
-              ]}
-              subDescriptions={[
-                {
-                  emoji: '🚀',
-                  text: '출시 당일(’23.08.17.) 300명 가입, 매일 100명 이상의 트래픽 발생',
-                },
-                {
-                  emoji: '🏆',
-                  text: '2023 42서울 소프트웨어 경진대회 대상(과학기술정보통신부 장관상) 수상',
-                },
-              ]}
-              date="2023.03 — 현재"
-              stacks={[
-                'React',
-                'GraphQL',
-                'ApexCharts',
-                'TypeScript',
-                'Styled Component',
-                'Jotai',
-                'AWS S3 + CloudFront',
-              ]}
-            />
-            <ProjectCard
-              title="Cerebri Class"
-              thumbnail={cerebri_class_thumbnail}
-              teamCount={1}
-              githubUrl="https://github.com/storyboard-lab/cerebri-class"
-              role="1인 개발"
-              descriptions={[
-                '영단어를 입력하면 문제를 생성하여 Word 학습지를 제작해주는 웹서비스',
-              ]}
-              subDescriptions={[
-                {
-                  emoji: '🔥',
-                  text: '교내 스타트업 팀으로부터 MVP 제작 의뢰를 받아 간단히 개발',
-                },
-              ]}
-              date="2023.04"
-              stacks={[
-                'React',
-                'FastAPI',
-                'Python-docx',
-                'TypeScript',
-                'Styled Component',
-                'ChatGPT',
-                'Docker Compose',
-                'AWS S3 + CloudFront',
-              ]}
-            />
-            <ProjectCard
-              title="LastPong"
-              thumbnail={last_pong_thumbnail}
-              teamCount={4}
-              githubUrl="https://github.com/lev-Zero/lastpong"
-              role="프론트엔드 개발"
-              descriptions={[
-                '채팅, 초대, 관전이 가능한 실시간 탁구 게임 웹서비스',
-              ]}
-              subDescriptions={[
-                {
-                  emoji: '✨',
-                  text: '42서울 공통과정 최종 과제',
-                },
-              ]}
-              date="2022.12 — 2023.01"
-              stacks={[
-                'Next.js',
-                'Socket.io',
-                'TypeScript',
-                'Chakra UI',
-                'Zustand',
-                'Docker Compose',
-              ]}
-            />
-            <ProjectCard
-              title="밀리루틴"
-              thumbnail={miliroutine_thumbnail}
-              teamCount={5}
-              githubUrl="https://github.com/osamhack2022-v2/WEB_AI_MILIROUTINE_MILIROUTINE"
-              role="팀장"
-              descriptions={['군인의 특성을 고려한 루틴 참여 및 추천 웹서비스']}
-              subDescriptions={[
-                {
-                  emoji: '🏆',
-                  text: '2022 OSAM 군장병 해커톤 우수상(공군참모총장상) 수상',
-                },
-              ]}
-              date="2022.09 — 2022.12"
-              stacks={[
-                'React',
-                'TypeScript',
-                'TailwindCSS',
-                'Docker Compose',
-                'Microsoft Azure',
-              ]}
-            />
-          </div>
+          <ProjectCard
+            title="42Stat"
+            thumbnail={stat_thumbnail}
+            teamCount={5}
+            githubUrl="https://github.com/42Statistics/42Stat-Frontend"
+            role="프론트엔드 개발"
+            descriptions={[
+              '42 API를 가공하여 42서울 교육생의 통계를 보여주는 반응형 대시보드 웹서비스',
+            ]}
+            subDescriptions={[
+              {
+                emoji: '🚀',
+                text: '출시 당일(’23.08.17.) 300명 가입, 매일 100명 이상의 트래픽 발생',
+              },
+              {
+                emoji: '🏆',
+                text: '2023 42서울 소프트웨어 경진대회 대상(과학기술정보통신부 장관상) 수상',
+              },
+            ]}
+            date="2023.03 — 현재"
+            stacks={[
+              'React',
+              'GraphQL',
+              'ApexCharts',
+              'TypeScript',
+              'Styled Component',
+              'Jotai',
+              'AWS S3 + CloudFront',
+            ]}
+          />
+          <ProjectCard
+            title="Cerebri Class"
+            thumbnail={cerebri_class_thumbnail}
+            teamCount={1}
+            githubUrl="https://github.com/storyboard-lab/cerebri-class"
+            role="1인 개발"
+            descriptions={[
+              '영단어를 입력하면 문제를 생성하여 Word 학습지를 제작해주는 웹서비스',
+            ]}
+            subDescriptions={[
+              {
+                emoji: '🔥',
+                text: '교내 스타트업 팀으로부터 MVP 제작 의뢰를 받아 간단히 개발',
+              },
+            ]}
+            date="2023.04"
+            stacks={[
+              'React',
+              'FastAPI',
+              'Python-docx',
+              'TypeScript',
+              'Styled Component',
+              'ChatGPT',
+              'Docker Compose',
+              'AWS S3 + CloudFront',
+            ]}
+          />
+          <ProjectCard
+            title="LastPong"
+            thumbnail={last_pong_thumbnail}
+            teamCount={4}
+            githubUrl="https://github.com/lev-Zero/lastpong"
+            role="프론트엔드 개발"
+            descriptions={[
+              '채팅, 초대, 관전이 가능한 실시간 탁구 게임 웹서비스',
+            ]}
+            subDescriptions={[
+              {
+                emoji: '✨',
+                text: '42서울 공통과정 최종 과제',
+              },
+            ]}
+            date="2022.12 — 2023.01"
+            stacks={[
+              'Next.js',
+              'Socket.io',
+              'TypeScript',
+              'Chakra UI',
+              'Zustand',
+              'Docker Compose',
+            ]}
+          />
+          <ProjectCard
+            title="밀리루틴"
+            thumbnail={miliroutine_thumbnail}
+            teamCount={5}
+            githubUrl="https://github.com/osamhack2022-v2/WEB_AI_MILIROUTINE_MILIROUTINE"
+            role="팀장"
+            descriptions={['군인의 특성을 고려한 루틴 참여 및 추천 웹서비스']}
+            subDescriptions={[
+              {
+                emoji: '🏆',
+                text: '2022 OSAM 군장병 해커톤 우수상(공군참모총장상) 수상',
+              },
+            ]}
+            date="2022.09 — 2022.12"
+            stacks={[
+              'React',
+              'TypeScript',
+              'TailwindCSS',
+              'Docker Compose',
+              'Microsoft Azure',
+            ]}
+          />
         </Section>
         <Section title="Education" id="education">
-          <div className="flex flex-col gap-12">
-            <EducationCard
-              title="고려대학교"
-              status="3학년 수료"
-              descriptions={['정치외교학 전공', '통계학 이중전공']}
-              subDescriptions={[
-                {
-                  emoji: '🐯',
-                  text: '학점 : 3.89 / 4.5',
-                },
-                {
-                  emoji: '✌️',
-                  text: '교내 중앙 컴퓨터 동아리 KUCC 활동 (2023.09 ~ 현재)',
-                },
-                {
-                  emoji: '✌️',
-                  text: '교내 웹개발 동아리 DevKor 활동 (2023.09 ~ 현재)',
-                },
-              ]}
-              date="2019.03 — 현재"
-            />
-            <EducationCard
-              title="42서울"
-              status="심화과정 종료"
-              descriptions={['공통과정 수료 (2023.01)']}
-              linkDescriptions={[
-                {
-                  href: 'https://www.youtube.com/watch?v=ilyHG8ly0Uw',
-                  text: '제주도에서 온 비전공 청년의 개발자 도전기',
-                  type: 'video',
-                },
-              ]}
-              date="2020.02 — 2022.12"
-            />
-          </div>
+          <EducationCard
+            title="고려대학교"
+            status="3학년 수료"
+            descriptions={['정치외교학 전공', '통계학 이중전공']}
+            subDescriptions={[
+              {
+                emoji: '🐯',
+                text: '학점 : 3.89 / 4.5',
+              },
+              {
+                emoji: '✌️',
+                text: '교내 중앙 컴퓨터 동아리 KUCC 활동 (2023.09 ~ 현재)',
+              },
+              {
+                emoji: '✌️',
+                text: '교내 웹개발 동아리 DevKor 활동 (2023.09 ~ 현재)',
+              },
+            ]}
+            date="2019.03 — 현재"
+          />
+          <EducationCard
+            title="42서울"
+            status="심화과정 종료"
+            descriptions={['공통과정 수료 (2023.01)']}
+            linkDescriptions={[
+              {
+                href: 'https://www.youtube.com/watch?v=ilyHG8ly0Uw',
+                text: '제주도에서 온 비전공 청년의 개발자 도전기',
+                type: 'video',
+              },
+            ]}
+            date="2020.02 — 2022.12"
+          />
         </Section>
-        <Section title="Certificate" id="certificate"></Section>
+        <Section title="Certificate" id="certificate">
+          <CertificateCard
+            title="PCCP Python3"
+            grade="Lv4 • 796 / 1000점"
+            descriptions={['프로그래머스에서 주관하는 알고리즘 테스트']}
+            date="2022.12.18."
+          />
+          <CertificateCard
+            title="컴퓨터활용능력"
+            grade="1급"
+            date="2020.10.09."
+          />
+        </Section>
         <footer className="flex flex-col gap-2 text-xs text-gray-600">
           <p>감사합니다. 🙇‍♂️🙇‍♂️🙇‍♂️</p>
           <p>© {year} Yongjun Park. (Last Updated : 2024.01.12.)</p>
