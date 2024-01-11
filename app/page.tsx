@@ -123,7 +123,7 @@ const Home = () => {
               에 눈을 뜨기 시작하였습니다.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-4">
             <p className="float-right text-gray-600">
               <a href="">
                 <Highlight>📎 이력서 파일 다운로드</Highlight>
@@ -161,6 +161,15 @@ const Home = () => {
               'Jotai',
               'AWS S3 + CloudFront',
             ]}
+          />
+          <ProjectCard
+            title="yopark.dev"
+            teamCount={1}
+            githubUrl="https://github.com/yoopark/yopark.dev"
+            role="1인 개발"
+            descriptions={['지금 보고 계신 사이트']}
+            date="2023.06, 2024.01"
+            stacks={['Next.js (App Router)', 'TailwindCSS', 'Vercel']}
           />
           <ProjectCard
             title="Cerebri Class"
@@ -206,7 +215,7 @@ const Home = () => {
             ]}
             date="2022.12 — 2023.01"
             stacks={[
-              'Next.js',
+              'Next.js (Pages Router)',
               'Socket.io',
               'TypeScript',
               'Chakra UI',
