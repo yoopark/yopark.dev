@@ -1,3 +1,7 @@
+import GithubLogo from '@/app/assets/github-logo.svg';
+import LinkedInLogo from '@/app/assets/linked-in-logo.svg';
+import Pen from '@/app/assets/pen.svg';
+
 const Home = () => {
   return (
     <header className="flex flex-col gap-2">
@@ -20,27 +24,27 @@ const Home = () => {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className="flex gap-3">
         <a
           href="https://github.com/yoopark"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Github
+          <GithubLogo className="w-5 h-5 text-gray-600" />
         </a>
         <a
           href="https://blog.yopark.dev"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Blog
+          <Pen className="w-5 h-5 text-gray-600" />
         </a>
         <a
           href="https://www.linkedin.com/in/yopark-dev"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Linkedin
+          <LinkedInLogo className="w-5 h-5 text-gray-600" />
         </a>
       </div>
     </header>
