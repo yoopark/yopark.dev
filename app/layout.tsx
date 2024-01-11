@@ -3,6 +3,8 @@ import './globals.css';
 
 import localFont from 'next/font/local';
 
+import { MouseTrackerProvider } from '@/app/components/MouseTracker/MouseTrackerProvider';
+
 const pretendard = localFont({
   src: '../public/fonts/PretendardVariable.woff2',
 });
@@ -15,7 +17,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <html lang="ko">
-      <body className={pretendard.className}>{children}</body>
+      <body className={pretendard.className}>
+        <MouseTrackerProvider>{children}</MouseTrackerProvider>
+      </body>
     </html>
   );
 };
