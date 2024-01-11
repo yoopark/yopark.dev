@@ -8,8 +8,12 @@ const Home = () => {
       <h1 className="text-5xl font-bold text-gray-900">박용준</h1>
       <p className="text-xl text-gray-900">프론트엔드 개발자</p>
       <div className="text-gray-600 text-sm">
-        <p>yopark.dev@gmail.com</p>
-        <p>010-2533-6357</p>
+        <a href="mailto:yopark.dev@gmail.com">
+          <p>yopark.dev@gmail.com</p>
+        </a>
+        <a href="tel:+821025336357">
+          <p>010-2533-6357</p>
+        </a>
       </div>
       <nav>
         <ul>
@@ -30,21 +34,21 @@ const Home = () => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <GithubLogo className="w-5 h-5 text-gray-600" />
+          <GithubLogo className="w-5 h-5 text-gray-600 transition hover:text-[#171515]" />
         </a>
         <a
           href="https://blog.yopark.dev"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <Pen className="w-5 h-5 text-gray-600" />
+          <Pen className="w-5 h-5 text-gray-600 transition hover:text-[#aa0000]" />
         </a>
         <a
           href="https://www.linkedin.com/in/yopark-dev"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <LinkedInLogo className="w-5 h-5 text-gray-600" />
+          <LinkedInLogo className="w-5 h-5 text-gray-600 transition hover:text-[#0077b5]" />
         </a>
       </div>
     </header>
