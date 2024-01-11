@@ -17,7 +17,7 @@ const year = new Date().getFullYear();
 const Home = () => {
   return (
     <div className="flex max-w-screen-lg pt-16 m-auto">
-      <header className="flex fixed flex-col w-[300px] gap-10">
+      <header className="flex fixed flex-col w-[300px] gap-14">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <h1 className="text-5xl font-bold text-gray-900">박용준</h1>
@@ -38,18 +38,80 @@ const Home = () => {
             </div>
           </div>
           <nav>
-            <ul>
+            <ul className="flex flex-col gap-1 font-semibold">
               <li>
-                <a href="#about">About</a>
+                <a href="#about" className="hover:text-blue-600">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#project">Project</a>
+                <a href="#project" className="hover:text-blue-600">
+                  Project
+                </a>
+                <ul className="text-xs font-normal text-gray-500 list-disc list-inside transition">
+                  <li>
+                    <a href="#42-stat" className="hover:text-blue-600">
+                      42Stat
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#yopark-dev" className="hover:text-blue-600">
+                      yopark.dev
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#cerebri-class" className="hover:text-blue-600">
+                      Cerebri Class
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#last-pong" className="hover:text-blue-600">
+                      LastPong
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#miliroutine" className="hover:text-blue-600">
+                      밀리루틴
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#education">Education</a>
+                <a href="#education" className="hover:text-blue-600">
+                  Education
+                </a>
+                <ul className="text-xs font-normal text-gray-500 list-disc list-inside">
+                  <li>
+                    <a href="#korea-univ" className="hover:text-blue-600">
+                      고려대학교
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#42-seoul" className="hover:text-blue-600">
+                      42서울
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#certificate">Certificate</a>
+                <a href="#certificate" className="hover:text-blue-600">
+                  Certificate
+                </a>
+                <ul className="text-xs font-normal text-gray-500 list-disc list-inside">
+                  <li>
+                    <a href="#pccp-python3" className="hover:text-blue-600">
+                      PCCP Python3
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#computer-specialist"
+                      className="hover:text-blue-600"
+                    >
+                      컴퓨터활용능력
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -79,7 +141,7 @@ const Home = () => {
         </div>
       </header>
       <main className="flex flex-col gap-28 ml-[300px] pb-20">
-        <Section title="About" id="about">
+        <Section title="About" id="about" hidden>
           <div className="flex flex-col gap-4">
             <p>
               <EmojiOnHover emoji="🏫">
@@ -134,6 +196,7 @@ const Home = () => {
         <Section title="Project" id="project">
           <ProjectCard
             title="42Stat"
+            id="42-stat"
             thumbnail={stat_thumbnail}
             teamCount={5}
             githubUrl="https://github.com/42Statistics/42Stat-Frontend"
@@ -164,6 +227,7 @@ const Home = () => {
           />
           <ProjectCard
             title="yopark.dev"
+            id="yopark-dev"
             teamCount={1}
             githubUrl="https://github.com/yoopark/yopark.dev"
             role="1인 개발"
@@ -173,6 +237,7 @@ const Home = () => {
           />
           <ProjectCard
             title="Cerebri Class"
+            id="cerebri-class"
             thumbnail={cerebri_class_thumbnail}
             teamCount={1}
             githubUrl="https://github.com/storyboard-lab/cerebri-class"
@@ -200,6 +265,7 @@ const Home = () => {
           />
           <ProjectCard
             title="LastPong"
+            id="last-pong"
             thumbnail={last_pong_thumbnail}
             teamCount={4}
             githubUrl="https://github.com/lev-Zero/lastpong"
@@ -225,6 +291,7 @@ const Home = () => {
           />
           <ProjectCard
             title="밀리루틴"
+            id="miliroutine"
             thumbnail={miliroutine_thumbnail}
             teamCount={5}
             githubUrl="https://github.com/osamhack2022-v2/WEB_AI_MILIROUTINE_MILIROUTINE"
@@ -249,6 +316,7 @@ const Home = () => {
         <Section title="Education" id="education">
           <EducationCard
             title="고려대학교"
+            id="korea-univ"
             status="3학년 수료"
             descriptions={['정치외교학 전공', '통계학 이중전공']}
             subDescriptions={[
@@ -269,6 +337,7 @@ const Home = () => {
           />
           <EducationCard
             title="42서울"
+            id="42-seoul"
             status="심화과정 종료"
             descriptions={['공통과정 수료 (2023.01)']}
             linkDescriptions={[
@@ -284,12 +353,14 @@ const Home = () => {
         <Section title="Certificate" id="certificate">
           <CertificateCard
             title="PCCP Python3"
+            id="pccp-python3"
             grade="Lv4 • 796 / 1000점"
             descriptions={['프로그래머스에서 주관하는 알고리즘 테스트']}
             date="2022.12.18."
           />
           <CertificateCard
             title="컴퓨터활용능력"
+            id="computer-specialist"
             grade="1급"
             date="2020.10.09."
           />

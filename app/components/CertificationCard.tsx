@@ -5,6 +5,7 @@ import type { LinkDescription, SubDescription } from '@/app/types/description';
 
 type CertificateCardProps = {
   title: string;
+  id: string /* for anchor */;
   grade: string;
   descriptions?: string[];
   subDescriptions?: SubDescription[];
@@ -14,6 +15,7 @@ type CertificateCardProps = {
 
 export const CertificateCard = ({
   title,
+  id,
   grade,
   descriptions,
   subDescriptions,
@@ -25,7 +27,9 @@ export const CertificateCard = ({
       <p className="mt-1.5 text-sm text-gray-700 w-16">{date}</p>
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline gap-4">
-          <h3 className="text-2xl font-bold">{title}</h3>
+          <h3 className="pt-16 -mt-16 text-2xl font-bold" id={id}>
+            {title}
+          </h3>
           <p className="text-sm">{grade}</p>
         </div>
         {descriptions !== undefined && (

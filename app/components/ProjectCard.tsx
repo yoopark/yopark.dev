@@ -9,6 +9,7 @@ import Image, { StaticImageData } from 'next/image';
 
 type ProjectCardProps = {
   title: string;
+  id: string /* for anchor */;
   thumbnail?: StaticImageData;
   teamCount: number;
   githubUrl?: string;
@@ -22,6 +23,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({
   title,
+  id,
   thumbnail,
   teamCount,
   githubUrl,
@@ -37,7 +39,9 @@ export const ProjectCard = ({
       <p className="mt-1.5 text-sm text-gray-700 w-16">{date}</p>
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline gap-4">
-          <h3 className="text-2xl font-bold">{title}</h3>
+          <h3 className="pt-16 -mt-16 text-2xl font-bold" id={id}>
+            {title}
+          </h3>
           <PeopleLabel count={teamCount} />
           <p className="text-sm">{role}</p>
           {githubUrl !== undefined && (
