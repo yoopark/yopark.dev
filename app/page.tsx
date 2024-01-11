@@ -18,8 +18,8 @@ const year = new Date().getFullYear();
 
 const Home = () => {
   return (
-    <div className="flex max-w-screen-lg pt-16 m-auto">
-      <header className="flex fixed flex-col w-[300px] gap-14">
+    <div className="flex flex-col max-w-screen-md gap-20 px-6 pt-6 m-auto md:px-16 md:pt-16 lg:gap-0 lg:px-0 lg:flex-row">
+      <header className="flex lg:fixed flex-col w-[300px] gap-14">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <h1 className="text-5xl font-bold text-gray-900">박용준</h1>
@@ -142,7 +142,7 @@ const Home = () => {
           </a>
         </div>
       </header>
-      <main className="flex flex-col gap-28 ml-[300px] pb-20">
+      <main className="flex flex-col gap-28 lg:ml-[300px] pb-20">
         <Section title="About" id="about" hidden>
           <div className="flex flex-col gap-4">
             <p>

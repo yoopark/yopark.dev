@@ -9,7 +9,7 @@ export const SubDescriptionListItem = ({
   subDescription,
 }: SubDescriptionListItemProps) => {
   return (
-    <li className="text-sm text-gray-700 w-max">
+    <li className="text-sm text-gray-700">
       <EmojiOnHover emoji={subDescription.emoji} spacing={2}>
         {subDescription.text}
       </EmojiOnHover>

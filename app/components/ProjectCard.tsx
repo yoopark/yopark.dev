@@ -35,20 +35,22 @@ export const ProjectCard = ({
   stacks,
 }: ProjectCardProps) => {
   return (
-    <div className="flex gap-6">
-      <p className="mt-1.5 text-sm text-gray-700 w-16">{date}</p>
+    <div className="flex flex-col gap-4 md:gap-6 md:flex-row">
+      <p className="mt-1.5 text-sm text-gray-700 md:w-16">{date}</p>
       <div className="flex flex-col gap-3">
-        <div className="flex items-baseline gap-4">
+        <div className="flex flex-col items-baseline gap-2 md:gap-4 md:flex-row">
           <h3 className="pt-16 -mt-16 text-2xl font-bold" id={id}>
             {title}
           </h3>
-          <PeopleLabel count={teamCount} />
-          <p className="text-sm">{role}</p>
-          {githubUrl !== undefined && (
-            <a href={githubUrl} target="_blank" rel="noreferrer noopener">
-              <GithubLogo className="w-4 h-4 text-gray-600 transition hover:text-[#171515]" />
-            </a>
-          )}
+          <div className="flex items-baseline gap-4">
+            <PeopleLabel count={teamCount} />
+            <p className="text-sm">{role}</p>
+            {githubUrl !== undefined && (
+              <a href={githubUrl} target="_blank" rel="noreferrer noopener">
+                <GithubLogo className="w-4 h-4 text-gray-600 transition hover:text-[#171515]" />
+              </a>
+            )}
+          </div>
         </div>
         <div className="flex flex-col gap-1">
           {descriptions.map((description, idx) => (

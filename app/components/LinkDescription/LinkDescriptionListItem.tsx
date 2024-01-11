@@ -11,7 +11,7 @@ export const LinkDescriptionListItem = ({
   const emoji = getEmojiByLinkType(linkDescription.type);
 
   return (
-    <li className="text-sm text-blue-800 w-max hover:text-blue-600 hover:underline">
+    <li className="text-sm text-blue-800 hover:text-blue-600 hover:underline">
       <a href={linkDescription.href} target="_blank" rel="noreferrer">
         {emoji} {linkDescription.text}
       </a>
