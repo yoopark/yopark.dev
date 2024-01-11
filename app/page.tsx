@@ -313,6 +313,13 @@ const Home = () => {
               'Docker Compose',
               'Microsoft Azure',
             ]}
+            linkDescriptions={[
+              {
+                href: 'https://www.youtube.com/watch?v=h4L3SUrZ61s',
+                text: '밀리루틴(MILIROUTINE) 시연 영상',
+                type: 'video',
+              },
+            ]}
           />
         </Section>
         <Section title="Education" id="education">
