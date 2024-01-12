@@ -3,6 +3,7 @@ import { SubDescriptionList } from '@/app/components/SubDescription/SubDescripti
 import { Highlight } from '@/components/Highlight';
 import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
 import type { LinkDescription, SubDescription } from '@/types/description';
+import { cn } from '@/utils/cn';
 
 type EducationCardProps = {
   title: string;
@@ -29,7 +30,7 @@ export const EducationCard = ({
         <p className="mt-1.5 text-sm text-gray-700 w-16">{date}</p>
         <div className="flex flex-col gap-3">
           <div className="flex items-baseline gap-4">
-            <h3 className="pt-16 -mt-16 text-2xl font-bold" id={id}>
+            <h3 className={cn('text-2xl font-bold', 'pt-16 -mt-16 ')} id={id}>
               {title}
             </h3>
             <p className="text-sm">{status}</p>

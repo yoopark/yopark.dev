@@ -1,12 +1,13 @@
-import FigmaLogo from '@/assets/icons/figma-logo.svg';
-import GithubLogo from '@/assets/icons/github-logo.svg';
 import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
 import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
+import FigmaLogo from '@/assets/icons/figma-logo.svg';
+import GithubLogo from '@/assets/icons/github-logo.svg';
 import { Highlight } from '@/components/Highlight';
 import { Label } from '@/components/Label';
 import { PeopleLabel } from '@/components/Label/PeopleLabel';
 import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
 import type { LinkDescription, SubDescription } from '@/types/description';
+import { cn } from '@/utils/cn';
 import Image, { StaticImageData } from 'next/image';
 
 type ProjectCardProps = {
@@ -44,7 +45,7 @@ export const ProjectCard = ({
         <p className="mt-1.5 text-sm text-gray-700 md:w-16">{date}</p>
         <div className="flex flex-col gap-3">
           <div className="flex flex-col items-baseline gap-2 md:gap-4 md:flex-row">
-            <h3 className="pt-16 -mt-16 text-2xl font-bold" id={id}>
+            <h3 className={cn('text-2xl font-bold', 'pt-16 -mt-16')} id={id}>
               {title}
             </h3>
             <div className="flex items-baseline gap-4">
