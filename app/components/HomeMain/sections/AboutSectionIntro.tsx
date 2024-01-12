@@ -1,4 +1,4 @@
-import { EmojiOnHover } from '@/app/components/EmojiOnHover';
+import { EmojiOnHover } from '@/components/EmojiOnHover';
 
 export const AboutSectionIntro = () => {
   return (

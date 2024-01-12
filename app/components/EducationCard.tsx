@@ -1,8 +1,8 @@
-import { FadeInFromTop } from '@/app/components/framer-motion/FadeInFromTop';
-import { Highlight } from '@/app/components/Highlight';
 import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
 import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
-import type { LinkDescription, SubDescription } from '@/app/types/description';
+import { Highlight } from '@/components/Highlight';
+import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
+import type { LinkDescription, SubDescription } from '@/types/description';
 
 type EducationCardProps = {
   title: string;

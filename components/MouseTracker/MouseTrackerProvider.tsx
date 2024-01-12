@@ -1,7 +1,7 @@
 'use client';
 
-import { MouseTracker } from '@/app/components/MouseTracker';
-import { useMousePosition } from '@/app/components/MouseTracker/hooks/useMousePosition';
+import { MouseTracker } from '@/components/MouseTracker';
+import { useMousePosition } from '@/components/MouseTracker/hooks/useMousePosition';
 
 export const MouseTrackerProvider = ({ children }: React.PropsWithChildren) => {
   const { position, isHoveringAnchor, handleMouseMove } = useMousePosition();

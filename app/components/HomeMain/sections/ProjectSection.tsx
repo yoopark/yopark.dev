@@ -1,9 +1,9 @@
-import stat_thumbnail from '@/app/assets/screenshots/42-stat-thumbnail.png';
-import cerebri_class_thumbnail from '@/app/assets/screenshots/cerebri-class-thumbnail.png';
-import last_pong_thumbnail from '@/app/assets/screenshots/last-pong-thumbnail.png';
-import miliroutine_thumbnail from '@/app/assets/screenshots/miliroutine-thumbnail.png';
+import stat_thumbnail from '@/assets/screenshots/42-stat-thumbnail.png';
+import cerebri_class_thumbnail from '@/assets/screenshots/cerebri-class-thumbnail.png';
+import last_pong_thumbnail from '@/assets/screenshots/last-pong-thumbnail.png';
+import miliroutine_thumbnail from '@/assets/screenshots/miliroutine-thumbnail.png';
 import { ProjectCard } from '@/app/components/ProjectCard';
-import { Section } from '@/app/components/Section';
+import { Section } from '@/components/Section';
 
 export const ProjectSection = () => {
   return (

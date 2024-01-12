@@ -1,7 +1,7 @@
-import GithubLogo from '@/app/assets/icons/github-logo.svg';
-import LinkedInLogo from '@/app/assets/icons/linked-in-logo.svg';
-import Pen from '@/app/assets/icons/pen.svg';
-import { NewTabAnchor } from '@/app/components/NewTabAnchor';
+import GithubLogo from '@/assets/icons/github-logo.svg';
+import LinkedInLogo from '@/assets/icons/linked-in-logo.svg';
+import Pen from '@/assets/icons/pen.svg';
+import { NewTabAnchor } from '@/components/NewTabAnchor';
 
 type SocialGroupProps = {
   githubUrl: string;

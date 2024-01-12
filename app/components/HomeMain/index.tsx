@@ -1,4 +1,4 @@
-import airplane from '@/app/assets/airplane.gif';
+import airplane from '@/assets/airplane.gif';
 import { HomeMainFooter } from '@/app/components/HomeMain/HomeMainFooter';
 import { AboutSection } from '@/app/components/HomeMain/sections/AboutSection';
 import { CertificateSection } from '@/app/components/HomeMain/sections/CertificateSection';

@@ -1,5 +1,5 @@
-import { EmojiOnHover } from '@/app/components/EmojiOnHover';
-import type { SubDescription } from '@/app/types/description';
+import { EmojiOnHover } from '@/components/EmojiOnHover';
+import type { SubDescription } from '@/types/description';
 
 type SubDescriptionListItemProps = {
   subDescription: SubDescription;

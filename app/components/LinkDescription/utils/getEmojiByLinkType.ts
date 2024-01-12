@@ -1,4 +1,4 @@
-import { LinkType } from '@/app/types/description';
+import { LinkType } from '@/types/description';
 
 export const getEmojiByLinkType = (type: LinkType) => {
   switch (type) {

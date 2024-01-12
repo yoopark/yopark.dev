@@ -1,5 +1,5 @@
 import { getEmojiByLinkType } from '@/app/components/LinkDescription/utils/getEmojiByLinkType';
-import type { LinkDescription } from '@/app/types/description';
+import type { LinkDescription } from '@/types/description';
 
 type LinkDescriptionListItemProps = {
   linkDescription: LinkDescription;

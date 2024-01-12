@@ -3,7 +3,7 @@ import './globals.css';
 
 import localFont from 'next/font/local';
 
-import { MouseTrackerProvider } from '@/app/components/MouseTracker/MouseTrackerProvider';
+import { MouseTrackerProvider } from '@/components/MouseTracker/MouseTrackerProvider';
 
 const pretendard = localFont({
   src: '../public/fonts/PretendardVariable.woff2',

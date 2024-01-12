@@ -1,5 +1,5 @@
-import { useMousePosition } from '@/app/components/MouseTracker/hooks/useMousePosition';
-import { cn } from '@/app/utils/cn';
+import { useMousePosition } from '@/components/MouseTracker/hooks/useMousePosition';
+import { cn } from '@/utils/cn';
 
 type MouseTrackerProps = Omit<
   ReturnType<typeof useMousePosition>,

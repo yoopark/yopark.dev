@@ -1,4 +1,4 @@
-import People from '@/app/assets/icons/people.svg';
+import People from '@/assets/icons/people.svg';
 
 type PeopleLabelProps = {
   count: number;

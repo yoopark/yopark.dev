@@ -1,12 +1,12 @@
-import FigmaLogo from '@/app/assets/icons/figma-logo.svg';
-import GithubLogo from '@/app/assets/icons/github-logo.svg';
-import { FadeInFromTop } from '@/app/components/framer-motion/FadeInFromTop';
-import { Highlight } from '@/app/components/Highlight';
-import { Label } from '@/app/components/Label';
-import { PeopleLabel } from '@/app/components/Label/PeopleLabel';
+import FigmaLogo from '@/assets/icons/figma-logo.svg';
+import GithubLogo from '@/assets/icons/github-logo.svg';
 import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
 import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
-import type { LinkDescription, SubDescription } from '@/app/types/description';
+import { Highlight } from '@/components/Highlight';
+import { Label } from '@/components/Label';
+import { PeopleLabel } from '@/components/Label/PeopleLabel';
+import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
+import type { LinkDescription, SubDescription } from '@/types/description';
 import Image, { StaticImageData } from 'next/image';
 
 type ProjectCardProps = {

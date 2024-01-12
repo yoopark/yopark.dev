@@ -1,5 +1,5 @@
 import { NavigationLink } from '@/app/components/Navigation/NavigationLink';
-import type { NavigationLinkType } from '@/app/types/navigation';
+import type { NavigationLinkType } from '@/types/navigation';
 
 type NavigationProps = {
   links: NavigationLinkType[];
