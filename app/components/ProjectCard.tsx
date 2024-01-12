@@ -6,11 +6,11 @@ import { Highlight } from '@/components/Highlight';
 import { Label } from '@/components/Label';
 import { PeopleLabel } from '@/components/Label/PeopleLabel';
 import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
-import { cn } from '@/utils/cn';
 import type { LinkDescription, SubDescription } from '@/types/description';
+import { cn } from '@/utils/cn';
 
-import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
 import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
+import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
 
 type ProjectCardProps = {
   title: string;
@@ -83,7 +83,11 @@ export const ProjectCard = ({
           </div>
           {thumbnail !== undefined && (
             <Image
-              className="w-4/5 mt-5 rounded-md shadow-lg grayscale-[.5] hover:grayscale-0 transition hover:scale-110 duration-300"
+              className={cn(
+                'w-4/5 mt-5 rounded-md shadow-lg transition duration-300',
+                'grayscale-[.5] hover:grayscale-0',
+                'hover:scale-110 hover:translate-x-4 hover:-translate-y-1'
+              )}
               src={thumbnail}
               alt={title}
             />
