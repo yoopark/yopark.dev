@@ -38,7 +38,7 @@ export const AboutSectionIntro = () => {
           <span className="font-semibold">정보사회</span>
         </EmojiOnHover>
         에서 벌어지는 일들에 관심이 많습니다. 최근에는 통계학을 공부하면서{' '}
-        <EmojiOnHover emoji="🚀">
+        <EmojiOnHover emoji="📊">
           <span className="font-semibold">데이터 시각화</span>
         </EmojiOnHover>
         에 눈을 뜨기 시작하였습니다.
