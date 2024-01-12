@@ -124,27 +124,27 @@ const Home = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <GithubLogo className="w-5 h-5 text-gray-600 transition hover:text-[#171515]" />
+            <GithubLogo className="w-5 h-5 text-gray-600 transition hover:text-[#171515] hover:scale-125" />
           </a>
           <a
             href="https://blog.yopark.dev"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Pen className="w-5 h-5 text-gray-600 transition hover:text-[#aa0000]" />
+            <Pen className="w-5 h-5 text-gray-600 transition hover:text-[#aa0000] hover:scale-125" />
           </a>
           <a
             href="https://www.linkedin.com/in/yopark-dev"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <LinkedInLogo className="w-5 h-5 text-gray-600 transition hover:text-[#0077b5]" />
+            <LinkedInLogo className="w-5 h-5 text-gray-600 transition hover:text-[#0077b5] hover:scale-125" />
           </a>
         </div>
       </header>
       <main className="flex flex-col gap-28 lg:ml-[300px] pb-20">
         <Section title="About" id="about" hidden>
-          <div className="flex flex-col gap-2 p-6 rounded-lg shadow-lg bg-amber-100/30">
+          <div className="flex flex-col gap-2 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-amber-100/60 transition bg-amber-100/30">
             <p className="text-lg font-semibold">
               👋 안녕하세요, 평생 개발을 곁에 두고 싶은 박용준입니다.
             </p>
