@@ -1,7 +1,8 @@
-import { HomeHeaderTitle } from '@/app/components/HomeHeader/HomeHeaderTitle';
-import { Navigation } from '@/app/components/Navigation';
 import { SocialGroup } from '@/components/SocialGroup';
 import type { NavigationLinkType } from '@/types/navigation';
+
+import { HomeHeaderTitle } from '@/app/components/HomeHeader/HomeHeaderTitle';
+import { Navigation } from '@/app/components/Navigation';
 
 const links: NavigationLinkType[] = [
   {

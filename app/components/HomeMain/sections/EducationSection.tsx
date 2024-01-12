@@ -1,5 +1,6 @@
-import { EducationCard } from '@/app/components/EducationCard';
 import { Section } from '@/components/Section';
+
+import { EducationCard } from '@/app/components/EducationCard';
 
 export const EducationSection = () => {
   return (

@@ -1,7 +1,8 @@
 import { Highlight } from '@/components/Highlight';
+import { Section } from '@/components/Section';
+
 import { AboutSectionCallout } from '@/app/components/HomeMain/sections/AboutSectionCallout';
 import { AboutSectionIntro } from '@/app/components/HomeMain/sections/AboutSectionIntro';
-import { Section } from '@/components/Section';
 
 export const AboutSection = () => {
   return (

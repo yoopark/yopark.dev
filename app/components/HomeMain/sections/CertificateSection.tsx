@@ -1,5 +1,6 @@
-import { CertificateCard } from '@/app/components/CertificationCard';
 import { Section } from '@/components/Section';
+
+import { CertificateCard } from '@/app/components/CertificationCard';
 
 export const CertificateSection = () => {
   return (

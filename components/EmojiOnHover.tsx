@@ -1,7 +1,8 @@
 'use client';
 
-import { cn } from '@/utils/cn';
 import { useState } from 'react';
+
+import { cn } from '@/utils/cn';
 
 type EmojiOnHoverProps = {
   emoji: string;

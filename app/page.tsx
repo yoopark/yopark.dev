@@ -1,6 +1,7 @@
+import { cn } from '@/utils/cn';
+
 import { HomeHeader } from '@/app/components/HomeHeader';
 import { HomeMain } from '@/app/components/HomeMain';
-import { cn } from '@/utils/cn';
 
 const Home = () => {
   return (

@@ -1,9 +1,10 @@
-import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
-import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
 import { Highlight } from '@/components/Highlight';
 import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
-import type { LinkDescription, SubDescription } from '@/types/description';
 import { cn } from '@/utils/cn';
+import type { LinkDescription, SubDescription } from '@/types/description';
+
+import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
+import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
 
 type CertificateCardProps = {
   title: string;

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import './globals.css';
-
 import localFont from 'next/font/local';
 
 import { MouseTrackerProvider } from '@/components/MouseTracker/MouseTrackerProvider';
+
+import './globals.css';
 
 const pretendard = localFont({
   src: '../public/fonts/PretendardVariable.woff2',

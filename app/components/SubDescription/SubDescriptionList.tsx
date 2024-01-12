@@ -1,5 +1,6 @@
-import { SubDescriptionListItem } from '@/app/components/SubDescription/SubDescriptionListItem';
 import type { SubDescription } from '@/types/description';
+
+import { SubDescriptionListItem } from '@/app/components/SubDescription/SubDescriptionListItem';
 
 type SubDescriptionListProps = {
   subDescriptions: SubDescription[];

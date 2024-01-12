@@ -1,5 +1,6 @@
-import { LinkDescriptionListItem } from '@/app/components/LinkDescription/LinkDescriptionListItem';
 import type { LinkDescription } from '@/types/description';
+
+import { LinkDescriptionListItem } from '@/app/components/LinkDescription/LinkDescriptionListItem';
 
 type LinkDescriptionListProps = {
   linkDescriptions: LinkDescription[];

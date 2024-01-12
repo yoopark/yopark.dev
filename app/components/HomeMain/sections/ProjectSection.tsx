@@ -2,8 +2,9 @@ import stat_thumbnail from '@/assets/screenshots/42-stat-thumbnail.png';
 import cerebri_class_thumbnail from '@/assets/screenshots/cerebri-class-thumbnail.png';
 import last_pong_thumbnail from '@/assets/screenshots/last-pong-thumbnail.png';
 import miliroutine_thumbnail from '@/assets/screenshots/miliroutine-thumbnail.png';
-import { ProjectCard } from '@/app/components/ProjectCard';
 import { Section } from '@/components/Section';
+
+import { ProjectCard } from '@/app/components/ProjectCard';
 
 export const ProjectSection = () => {
   return (

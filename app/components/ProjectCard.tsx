@@ -1,14 +1,16 @@
-import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
-import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
+import Image, { StaticImageData } from 'next/image';
+
 import FigmaLogo from '@/assets/icons/figma-logo.svg';
 import GithubLogo from '@/assets/icons/github-logo.svg';
 import { Highlight } from '@/components/Highlight';
 import { Label } from '@/components/Label';
 import { PeopleLabel } from '@/components/Label/PeopleLabel';
 import { FadeInFromTop } from '@/components/framer-motion/FadeInFromTop';
-import type { LinkDescription, SubDescription } from '@/types/description';
 import { cn } from '@/utils/cn';
-import Image, { StaticImageData } from 'next/image';
+import type { LinkDescription, SubDescription } from '@/types/description';
+
+import { SubDescriptionList } from '@/app/components/SubDescription/SubDescriptionList';
+import { LinkDescriptionList } from '@/app/components/LinkDescription/LinkDescriptionList';
 
 type ProjectCardProps = {
   title: string;
