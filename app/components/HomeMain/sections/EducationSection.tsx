@@ -1,13 +1,14 @@
 import { Section } from '@/components/Section';
 
-import { EducationCard } from '@/app/components/EducationCard';
+import { EducationCard } from '@/app/components/Card/EducationCard';
 
 export const EducationSection = () => {
   return (
     <Section title="Education" id="education">
       <EducationCard
+        date="2019.03 — 현재"
         title="고려대학교"
-        id="korea-univ"
+        titleId="korea-univ"
         status="3학년 수료"
         descriptions={['정치외교학 전공', '통계학 이중전공']}
         subDescriptions={[
@@ -24,11 +25,11 @@ export const EducationSection = () => {
             text: '교내 웹개발 동아리 DevKor 활동 (2023.09 ~ 현재)',
           },
         ]}
-        date="2019.03 — 현재"
       />
       <EducationCard
+        date="2020.02 — 2022.12"
         title="42서울"
-        id="42-seoul"
+        titleId="42-seoul"
         status="심화과정 종료"
         descriptions={['공통과정 수료 (2023.01)']}
         linkDescriptions={[
@@ -38,7 +39,6 @@ export const EducationSection = () => {
             type: 'video',
           },
         ]}
-        date="2020.02 — 2022.12"
       />
     </Section>
   );
