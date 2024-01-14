@@ -18,6 +18,10 @@ const links: NavigationLinkType[] = [
         href: '#42-stat',
       },
       {
+        title: 'blog.yopark.dev',
+        href: '#blog-yopark-dev',
+      },
+      {
         title: 'yopark.dev',
         href: '#yopark-dev',
       },

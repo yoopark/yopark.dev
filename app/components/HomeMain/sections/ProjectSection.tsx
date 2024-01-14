@@ -1,4 +1,5 @@
 import stat_thumbnail from '@/assets/screenshots/42-stat-thumbnail.png';
+import blog_thumbnail from '@/assets/screenshots/blog-thumbnail.png';
 import cerebri_class_thumbnail from '@/assets/screenshots/cerebri-class-thumbnail.png';
 import last_pong_thumbnail from '@/assets/screenshots/last-pong-thumbnail.png';
 import miliroutine_thumbnail from '@/assets/screenshots/miliroutine-thumbnail.png';
@@ -45,6 +46,25 @@ export const ProjectSection = () => {
         ]}
       />
       <ProjectCard
+        date="2024.01"
+        title="blog.yopark.dev"
+        titleId="blog-yopark-dev"
+        thumbnail={blog_thumbnail}
+        teamCount={1}
+        references={{
+          githubUrl: 'https://github.com/yoopark/blog.yopark.dev',
+        }}
+        role="1인 개발"
+        descriptions={['직접 만든 개발 블로그']}
+        stacks={[
+          'Next.js (App Router)',
+          'Contentlayer',
+          'TailwindCSS',
+          'Framer Motion',
+          'Vercel',
+        ]}
+      />
+      <ProjectCard
         date="2023.06, 2024.01"
         title="yopark.dev"
         titleId="yopark-dev"
@@ -54,7 +74,12 @@ export const ProjectSection = () => {
         }}
         role="1인 개발"
         descriptions={['지금 보고 계신 사이트']}
-        stacks={['Next.js (App Router)', 'TailwindCSS', 'Vercel']}
+        stacks={[
+          'Next.js (App Router)',
+          'TailwindCSS',
+          'Framer Motion',
+          'Vercel',
+        ]}
       />
       <ProjectCard
         date="2023.04"
