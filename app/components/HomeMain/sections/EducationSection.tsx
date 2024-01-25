@@ -27,7 +27,7 @@ export const EducationSection = () => {
         ]}
       />
       <EducationCard
-        date="2020.02 — 2022.12"
+        date="2020.02 — 2023.12"
         title="42서울"
         titleId="42-seoul"
         status="심화과정 종료"
