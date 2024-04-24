@@ -1,3 +1,5 @@
+import { LinkIcon } from 'lucide-react';
+
 import FigmaLogo from '@/assets/icons/figma-logo.svg';
 import GithubLogo from '@/assets/icons/github-logo.svg';
 import { Label } from '@/components/Label';
@@ -12,6 +14,7 @@ type ProjectCardProps = Omit<
 > & {
   teamCount: number;
   references: {
+    deployUrl?: string;
     githubUrl?: string;
     figmaUrl?: string;
   };
@@ -21,7 +24,7 @@ type ProjectCardProps = Omit<
 
 export const ProjectCard = ({
   teamCount,
-  references: { githubUrl, figmaUrl },
+  references: { deployUrl, githubUrl, figmaUrl },
   role,
   stacks,
   ...props
@@ -30,6 +33,11 @@ export const ProjectCard = ({
     <>
       <PeopleLabel count={teamCount} />
       <p className="text-sm">{role}</p>
+      {deployUrl !== undefined && (
+        <NewTabAnchor href={deployUrl}>
+          <LinkIcon className="w-4 h-4 text-gray-600 transition hover:text-[#2f80ed] hover:scale-125" />
+        </NewTabAnchor>
+      )}
       {githubUrl !== undefined && (
         <NewTabAnchor href={githubUrl}>
           <GithubLogo className="w-4 h-4 text-gray-600 transition hover:text-[#171515] hover:scale-125" />

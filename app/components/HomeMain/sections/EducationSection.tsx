@@ -9,7 +9,7 @@ export const EducationSection = () => {
         date="2019.03 — 현재"
         title="고려대학교"
         titleId="korea-univ"
-        status="3학년 수료"
+        status="4학년 1학기 재학 중"
         descriptions={['정치외교학 전공', '통계학 이중전공']}
         subDescriptions={[
           {
@@ -27,7 +27,7 @@ export const EducationSection = () => {
         ]}
       />
       <EducationCard
-        date="2020.02 — 2023.12"
+        date="2020.02 — 2023.12 (2년*)"
         title="42서울"
         titleId="42-seoul"
         status="심화과정 종료"

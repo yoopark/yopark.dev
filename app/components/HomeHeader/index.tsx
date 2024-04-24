@@ -14,20 +14,16 @@ const links: NavigationLinkType[] = [
     href: '#project',
     links: [
       {
+        title: '블꾸',
+        href: '#blccu',
+      },
+      {
+        title: 'PlusAlpha',
+        href: '#plus-alpha',
+      },
+      {
         title: '42Stat',
         href: '#42-stat',
-      },
-      {
-        title: 'blog.yopark.dev',
-        href: '#blog-yopark-dev',
-      },
-      {
-        title: 'yopark.dev',
-        href: '#yopark-dev',
-      },
-      {
-        title: 'Cerebri Class',
-        href: '#cerebri-class',
       },
       {
         title: 'LastPong',
@@ -36,6 +32,28 @@ const links: NavigationLinkType[] = [
       {
         title: '밀리루틴',
         href: '#miliroutine',
+      },
+    ],
+  },
+  {
+    title: 'Toy Project',
+    href: '#toy-project',
+    links: [
+      {
+        title: '극락 퀴즈쇼',
+        href: '#keukrak',
+      },
+      {
+        title: '개인 개발 블로그',
+        href: '#blog-yopark-dev',
+      },
+      {
+        title: '개인 포트폴리오 사이트',
+        href: '#yopark-dev',
+      },
+      {
+        title: 'Cerebri Class',
+        href: '#cerebri-class',
       },
     ],
   },

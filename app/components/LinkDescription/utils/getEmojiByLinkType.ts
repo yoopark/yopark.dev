@@ -6,6 +6,8 @@ export const getEmojiByLinkType = (type: LinkType) => {
       return '🎥';
     case 'article':
       return '📄';
+    case 'file':
+      return '📎';
     default:
       throw new Error(`Unknown link type: ${type}`);
   }

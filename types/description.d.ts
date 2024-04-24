@@ -3,7 +3,7 @@ export type SubDescription = {
   text: string;
 };
 
-export type LinkType = 'video' | 'article';
+export type LinkType = 'video' | 'article' | 'file';
 
 export type LinkDescription = {
   href: string;

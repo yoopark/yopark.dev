@@ -1,6 +1,6 @@
 export const AboutSectionCallout = () => {
   return (
-    <div className="flex flex-col gap-2 p-6 rounded-lg shadow-lg hover:scale-105 hover:bg-amber-100/60 transition bg-amber-100/30">
+    <div className="flex flex-col gap-2 p-6 rounded-lg shadow-lg hover:bg-amber-100/80 transition bg-amber-100/60">
       <p className="text-lg font-semibold">
         👋 안녕하세요, 평생 개발을 곁에 두고 싶은 박용준입니다.
       </p>
