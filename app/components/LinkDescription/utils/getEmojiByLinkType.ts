@@ -8,6 +8,8 @@ export const getEmojiByLinkType = (type: LinkType) => {
       return '📄';
     case 'file':
       return '📎';
+    case 'link':
+      return '🚀';
     default:
       throw new Error(`Unknown link type: ${type}`);
   }

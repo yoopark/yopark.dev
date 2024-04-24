@@ -72,6 +72,16 @@ const links: NavigationLinkType[] = [
     ],
   },
   {
+    title: 'Study',
+    href: '#study',
+    links: [
+      {
+        title: '우테코 따라잡기 (근데 이제 Next.js를 곁들인)',
+        href: '#not-woowacourse',
+      },
+    ],
+  },
+  {
     title: 'Certificate',
     href: '#certificate',
     links: [

@@ -37,7 +37,7 @@ export const Card = ({
       <div className="flex flex-col gap-4 md:gap-6 md:flex-row">
         <p className="mt-1.5 text-sm text-gray-700 md:w-16">{date}</p>
         <div className="flex flex-col gap-3">
-          <div className="flex flex-col items-baseline gap-2 md:gap-4 md:flex-row">
+          <div className="flex flex-col items-baseline gap-2 md:gap-4 md:flex-row flex-wrap">
             <h3
               className={cn('text-2xl font-bold', 'pt-16 -mt-16')}
               id={titleId}
