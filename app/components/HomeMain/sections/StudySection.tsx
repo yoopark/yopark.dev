@@ -17,7 +17,7 @@ export const StudySection = () => {
         }}
         role="세션장"
         descriptions={[
-          '동일한 보일러플레이트, 동일한 구현과제를 풀어보며 서로의 코드를 보고 배우는 스터디',
+          '동일한 보일러플레이트, 동일한 구현과제를 풀어보며 기초가 탄탄한 Next.js 개발자가 되기 위한 스터디',
         ]}
         subDescriptions={[
           {

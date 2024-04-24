@@ -52,6 +52,10 @@ const links: NavigationLinkType[] = [
         href: '#yopark-dev',
       },
       {
+        title: 'Beforeleave',
+        href: '#beforeleave',
+      },
+      {
         title: 'Cerebri Class',
         href: '#cerebri-class',
       },
