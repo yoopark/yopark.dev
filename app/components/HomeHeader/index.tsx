@@ -110,8 +110,6 @@ export const HomeHeader = () => {
           description="프론트엔드 개발자"
           bio="🌱🌱🌱🌱"
           mail="yopark.dev@gmail.com"
-          phone="+821025336357"
-          phoneToShow="010-2533-6357"
         />
         <Navigation links={links} />
       </div>

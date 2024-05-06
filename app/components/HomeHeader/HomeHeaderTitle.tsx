@@ -5,8 +5,6 @@ type HomeHeaderTitleProps = {
   description: string;
   bio: string;
   mail: string;
-  phone: string;
-  phoneToShow: string;
 };
 
 export const HomeHeaderTitle = ({
@@ -14,8 +12,6 @@ export const HomeHeaderTitle = ({
   description,
   bio,
   mail,
-  phone,
-  phoneToShow,
 }: HomeHeaderTitleProps) => {
   return (
     <div className="flex flex-col gap-4">
@@ -24,7 +20,7 @@ export const HomeHeaderTitle = ({
         <p className="text-xl text-gray-900">{description}</p>
         <p className="text-sm text-gray-700">{bio}</p>
       </div>
-      <HomeHeaderContact mail={mail} phone={phone} phoneToShow={phoneToShow} />
+      <HomeHeaderContact mail={mail} />
     </div>
   );
 };
