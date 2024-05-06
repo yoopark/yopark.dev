@@ -1,4 +1,6 @@
 import { Section } from '@/components/Section';
+import { Highlight } from '@/components/Highlight';
+import { NewTabAnchor } from '@/components/NewTabAnchor';
 
 import { AboutSectionCallout } from '@/app/components/HomeMain/sections/AboutSectionCallout';
 import { AboutSectionIntro } from '@/app/components/HomeMain/sections/AboutSectionIntro';
@@ -8,13 +10,13 @@ export const AboutSection = () => {
     <Section title="About" id="about" hidden>
       <AboutSectionCallout />
       <AboutSectionIntro />
-      {/* <div className="mt-4">
-        <p className="float-right text-gray-600">
-          <a href="/clair-de-lune.pdf">
-            <Highlight>📎 이력서 파일 다운로드</Highlight>
-          </a>
+      <div>
+        <p className="text-gray-600">
+          <NewTabAnchor href="/박용준 이력서.pdf">
+            <Highlight>📎 이력서 PDF 링크</Highlight>
+          </NewTabAnchor>
         </p>
-      </div> */}
+      </div>
     </Section>
   );
 };
