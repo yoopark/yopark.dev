@@ -1,7 +1,3 @@
-import Image from 'next/image';
-
-import airplane from '@/assets/airplane.gif';
-
 import { HomeMainFooter } from '@/app/components/HomeMain/HomeMainFooter';
 import { AboutSection } from '@/app/components/HomeMain/sections/AboutSection';
 import { CertificateSection } from '@/app/components/HomeMain/sections/CertificateSection';
@@ -19,12 +15,6 @@ export const HomeMain = () => {
       <EducationSection />
       <StudySection />
       <CertificateSection />
-      <Image
-        width={400}
-        src={airplane}
-        alt="airplane"
-        className="select-none"
-      />
       <HomeMainFooter />
     </main>
   );

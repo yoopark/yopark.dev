@@ -1,4 +1,5 @@
 import stat_thumbnail from '@/assets/screenshots/42-stat-thumbnail.png';
+import blccu_thumbnail from '@/assets/screenshots/blccu-thumbnail.png';
 import last_pong_thumbnail from '@/assets/screenshots/last-pong-thumbnail.png';
 import miliroutine_thumbnail from '@/assets/screenshots/miliroutine-thumbnail.png';
 import plus_alpha_thumbnail from '@/assets/screenshots/plus-alpha-thumbnail.png';
@@ -10,9 +11,10 @@ export const ProjectSection = () => {
   return (
     <Section title="Project" id="project">
       <ProjectCard
-        date="2024.04 — 현재"
-        title="블꾸 (개발 중)"
+        date="2024.04. — 2024.06. (3개월)"
+        title="블꾸"
         titleId="blccu"
+        thumbnail={blccu_thumbnail}
         teamCount={5}
         references={{
           deployUrl: 'https://blccu.com',
@@ -52,7 +54,7 @@ export const ProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2024.02 — 2024.04 (2개월)"
+        date="2024.02. — 2024.04. (2개월)"
         title="PlusAlpha"
         titleId="plus-alpha"
         thumbnail={plus_alpha_thumbnail}
@@ -97,7 +99,7 @@ export const ProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2023.03 — 2024.02 (1년)"
+        date="2023.03. — 2024.02. (1년)"
         title="42Stat"
         titleId="42-stat"
         thumbnail={stat_thumbnail}
@@ -168,7 +170,7 @@ export const ProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2022.12 — 2023.02 (3개월)"
+        date="2022.12. — 2023.02. (3개월)"
         title="LastPong"
         titleId="last-pong"
         thumbnail={last_pong_thumbnail}
@@ -208,7 +210,7 @@ export const ProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2022.09 — 2022.12 (3개월)"
+        date="2022.09. — 2022.12. (3개월)"
         title="밀리루틴"
         titleId="miliroutine"
         thumbnail={miliroutine_thumbnail}

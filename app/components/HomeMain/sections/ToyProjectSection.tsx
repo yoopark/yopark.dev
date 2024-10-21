@@ -1,8 +1,8 @@
+import beforeleave_thumbnail from '@/assets/screenshots/beforeleave-thumbnail.png';
 import blog_thumbnail from '@/assets/screenshots/blog-thumbnail.png';
 import cerebri_class_thumbnail from '@/assets/screenshots/cerebri-class-thumbnail.png';
 import keukrak_thumbnail from '@/assets/screenshots/keukrak-thumbnail.png';
 import { Section } from '@/components/Section';
-import beforeleave_thumbnail from '@/assets/screenshots/beforeleave-thumbnail.png';
 
 import { ProjectCard } from '@/app/components/Card/ProjectCard';
 
@@ -10,7 +10,7 @@ export const ToyProjectSection = () => {
   return (
     <Section title="Toy Project" id="toy-project">
       <ProjectCard
-        date="2024.03 (2일)"
+        date="2024.03. (2일)"
         title="극락 퀴즈쇼"
         titleId="keukrak"
         thumbnail={keukrak_thumbnail}
@@ -48,7 +48,7 @@ export const ToyProjectSection = () => {
         stacks={['Next.js (App Router)', 'WebSocket', 'GPT-4']}
       />
       <ProjectCard
-        date="2024.01 (3일)"
+        date="2024.01. (3일)"
         title="개인 개발 블로그"
         titleId="blog-yopark-dev"
         thumbnail={blog_thumbnail}
@@ -77,7 +77,7 @@ export const ToyProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2024.01 (3일)"
+        date="2024.01. (3일)"
         title="개인 포트폴리오 사이트"
         titleId="yopark-dev"
         teamCount={1}
@@ -101,7 +101,7 @@ export const ToyProjectSection = () => {
         ]}
       />
       <ProjectCard
-        date="2024.01 (3일)"
+        date="2024.01. (3일)"
         title="Beforeleave"
         titleId="beforeleave"
         thumbnail={beforeleave_thumbnail}
@@ -124,7 +124,7 @@ export const ToyProjectSection = () => {
         stacks={['Chrome Extension API', 'JavaScript', 'CSS']}
       />
       <ProjectCard
-        date="2023.04 (2주)"
+        date="2023.04. (2주)"
         title="Cerebri Class"
         titleId="cerebri-class"
         thumbnail={cerebri_class_thumbnail}

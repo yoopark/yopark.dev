@@ -4,9 +4,16 @@ type CertificateCardProps = Omit<
   CardProps,
   'subTitleNode' | 'belowDescriptionNode' | 'thumbnail'
 > & {
-  grade: string;
+  host?: string;
 };
 
-export const CertificateCard = ({ grade, ...props }: CertificateCardProps) => {
-  return <Card {...props} subTitleNode={<p className="text-sm">{grade}</p>} />;
+export const CertificateCard = ({ host, ...props }: CertificateCardProps) => {
+  return (
+    <Card
+      {...props}
+      subTitleNode={
+        host === undefined ? undefined : <p className="text-sm">{host}</p>
+      }
+    />
+  );
 };

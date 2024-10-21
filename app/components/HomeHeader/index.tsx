@@ -108,7 +108,6 @@ export const HomeHeader = () => {
         <HomeHeaderTitle
           title="박용준"
           description="프론트엔드 개발자"
-          bio="🌱🌱🌱🌱"
           mail="yopark.dev@gmail.com"
         />
         <Navigation links={links} />
