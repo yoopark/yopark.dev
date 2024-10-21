@@ -15,6 +15,7 @@ export const ToyProjectSection = () => {
         titleId="keukrak"
         thumbnail={keukrak_thumbnail}
         teamCount={4}
+        teamComposition="FE 1 / BE 1 / 프롬프트 2"
         references={{
           deployUrl: 'https://keukrak.r4bb1t.dev',
         }}
@@ -41,7 +42,7 @@ export const ToyProjectSection = () => {
         linkDescriptions={[
           {
             href: '/keukrak-ppt.pdf',
-            text: '발표자료',
+            text: '해커톤 발표자료',
             type: 'file',
           },
         ]}

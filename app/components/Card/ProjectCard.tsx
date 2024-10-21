@@ -13,6 +13,7 @@ type ProjectCardProps = Omit<
   'subTitleNode' | 'belowDescriptionNode'
 > & {
   teamCount: number;
+  teamComposition?: string;
   references: {
     deployUrl?: string;
     githubUrl?: string;
@@ -24,6 +25,7 @@ type ProjectCardProps = Omit<
 
 export const ProjectCard = ({
   teamCount,
+  teamComposition,
   references: { deployUrl, githubUrl, figmaUrl },
   role,
   stacks,
@@ -31,7 +33,12 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   const subTitleNode = (
     <>
-      <PeopleLabel count={teamCount} />
+      <div className="flex items-baseline gap-1.5">
+        <PeopleLabel count={teamCount} />
+        {teamComposition !== undefined && (
+          <p className="text-xs text-gray-500">{teamComposition}</p>
+        )}
+      </div>
       <p className="text-sm">{role}</p>
       {deployUrl !== undefined && (
         <NewTabAnchor href={deployUrl}>

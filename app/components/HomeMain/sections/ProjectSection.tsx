@@ -16,6 +16,7 @@ export const ProjectSection = () => {
         titleId="blccu"
         thumbnail={blccu_thumbnail}
         teamCount={5}
+        teamComposition="기획 1 / 디자인 1 / FE 2 / BE 1"
         references={{
           deployUrl: 'https://blccu.com',
           githubUrl:
@@ -59,6 +60,7 @@ export const ProjectSection = () => {
         titleId="plus-alpha"
         thumbnail={plus_alpha_thumbnail}
         teamCount={4}
+        teamComposition="FE 2 / BE 2"
         references={{
           deployUrl: 'https://plusalpha.io',
           figmaUrl:
@@ -104,6 +106,7 @@ export const ProjectSection = () => {
         titleId="42-stat"
         thumbnail={stat_thumbnail}
         teamCount={5}
+        teamComposition="FE 3 / BE 2"
         references={{
           deployUrl: 'https://stat.42seoul.kr',
           githubUrl: 'https://github.com/42Statistics/42Stat-Frontend',
@@ -175,6 +178,7 @@ export const ProjectSection = () => {
         titleId="last-pong"
         thumbnail={last_pong_thumbnail}
         teamCount={4}
+        teamComposition="FE 3 / BE 1"
         references={{
           githubUrl: 'https://github.com/lev-Zero/lastpong',
           figmaUrl:
@@ -215,6 +219,7 @@ export const ProjectSection = () => {
         titleId="miliroutine"
         thumbnail={miliroutine_thumbnail}
         teamCount={5}
+        teamComposition="FE 3 / BE 1 / AI 1"
         references={{
           githubUrl:
             'https://github.com/osamhack2022-v2/WEB_AI_MILIROUTINE_MILIROUTINE',
