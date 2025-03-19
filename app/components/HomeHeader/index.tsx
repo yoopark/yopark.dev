@@ -1,17 +1,17 @@
-import { SocialGroup } from '@/components/SocialGroup';
-import type { NavigationLinkType } from '@/types/navigation';
+import { SocialGroup } from "@/components/SocialGroup";
+import type { NavigationLinkType } from "@/types/navigation";
 
-import { HomeHeaderTitle } from '@/app/components/HomeHeader/HomeHeaderTitle';
-import { Navigation } from '@/app/components/Navigation';
+import { HomeHeaderTitle } from "@/app/components/HomeHeader/HomeHeaderTitle";
+import { Navigation } from "@/app/components/Navigation";
 
 const links: NavigationLinkType[] = [
   {
-    title: 'About',
-    href: '#about',
+    title: "About",
+    href: "#about",
   },
   {
-    title: 'Project',
-    href: '#project',
+    title: "Project",
+    href: "#project",
     links: [
       // {
       //   title: '블꾸',
@@ -36,8 +36,8 @@ const links: NavigationLinkType[] = [
     ],
   },
   {
-    title: 'Toy Project',
-    href: '#toy-project',
+    title: "Toy Project",
+    href: "#toy-project",
     links: [
       // {
       //   title: '극락 퀴즈쇼',
@@ -62,8 +62,8 @@ const links: NavigationLinkType[] = [
     ],
   },
   {
-    title: 'Education',
-    href: '#education',
+    title: "Education",
+    href: "#education",
     links: [
       // {
       //   title: '고려대학교',
@@ -76,8 +76,8 @@ const links: NavigationLinkType[] = [
     ],
   },
   {
-    title: 'Study',
-    href: '#study',
+    title: "Study",
+    href: "#study",
     links: [
       // {
       //   title: '우테코 따라잡기 (근데 이제 Next.js를 곁들인)',
@@ -86,8 +86,8 @@ const links: NavigationLinkType[] = [
     ],
   },
   {
-    title: 'Certificate',
-    href: '#certificate',
+    title: "Certificate",
+    href: "#certificate",
     links: [
       // {
       //   title: 'PCCP Python3',
@@ -103,12 +103,12 @@ const links: NavigationLinkType[] = [
 
 export const HomeHeader = () => {
   return (
-    <header className="flex lg:fixed flex-col w-[300px] gap-14">
+    <header className="flex lg:fixed flex-col gap-14">
       <div className="flex flex-col gap-10">
         <HomeHeaderTitle
           title="박용준"
           description="프론트엔드 개발자"
-          mail="yopark.dev@gmail.com"
+          mail="me@yopark.dev"
         />
         <Navigation links={links} />
       </div>

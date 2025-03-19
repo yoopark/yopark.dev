@@ -7,10 +7,9 @@ const Home = () => {
   return (
     <div
       className={cn(
-        "max-w-screen-md m-auto",
-        "flex flex-col lg:flex-row",
+        "flex flex-col xl:flex-row max-w-screen-lg",
         "gap-20 lg:gap-0",
-        "px-6 pt-6 md:px-16 md:pt-16 lg:px-0"
+        "px-4 pt-4 md:px-12 md:pt-12 mx-auto transition-all"
       )}
     >
       <HomeHeader />

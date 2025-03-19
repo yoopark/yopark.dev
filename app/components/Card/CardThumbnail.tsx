@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/image';
+import Image, { ImageProps } from "next/image";
 
 export const CardThumbnail = (props: ImageProps) => {
   return (
