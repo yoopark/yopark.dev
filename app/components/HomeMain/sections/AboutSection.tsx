@@ -1,11 +1,11 @@
-import { Section } from '@/components/Section';
+import { Section } from "@/components/Section";
 
-import { AboutSectionCallout } from '@/app/components/HomeMain/sections/AboutSectionCallout';
-import { AboutSectionIntro } from '@/app/components/HomeMain/sections/AboutSectionIntro';
+import { AboutSectionCallout } from "@/app/components/HomeMain/sections/AboutSectionCallout";
+import { AboutSectionIntro } from "@/app/components/HomeMain/sections/AboutSectionIntro";
 
 export const AboutSection = () => {
   return (
-    <Section title="About" id="about" hidden>
+    <Section id="about">
       <AboutSectionCallout />
       <AboutSectionIntro />
       {/* <div>
